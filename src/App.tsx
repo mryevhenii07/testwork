@@ -1,11 +1,10 @@
 import React from 'react';
-
-import './App.css';
+import CustomersAll from './components/CustomersAll/CustomersAll';
 
 function App() {
   return (
     <div className="App">
-      cf
+      <CustomersAll />
     </div>
   );
 }

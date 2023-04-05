@@ -13,7 +13,7 @@ const CustomersAll: FC = () => {
           <h2 className={s.titleAllCustomers}>All Customers</h2>
           <p className={s.titleActiveMembers}>Active Members</p>
         </div>
-        <div>
+        <div >
           <SearchCustomers
             setValue={setValue}
             value={value}

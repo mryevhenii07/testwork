@@ -7,6 +7,8 @@
     padding: 24px 0 ;
 }
 
+
+
 .item{
     display: flex;
     font-family: 'Poppins';
@@ -17,6 +19,13 @@
     color: #292D32; 
 }
 
+@media (max-width:520px) {
+    .item{  
+    width: 130px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    }}
 
 .active{
     margin-left: 10px;

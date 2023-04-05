@@ -11,7 +11,7 @@ interface Props {
 const CustomersList: FC<Props> = ({ value }) => {
   const filterUsers = users.filter((item) => item.name.toLowerCase().includes(value.toLowerCase()));
   return (
-    <div>
+    <div className={s.wrap}>
       <ul className={s.categoriesList}>
         {categories.map((category, index) => (
           <li className={s.categoriesItem} key={index}>
@@ -19,7 +19,8 @@ const CustomersList: FC<Props> = ({ value }) => {
           </li>
         ))}
       </ul>
-      <ul>
+
+      <ul className={s.wrapCusItem}>
         {filterUsers.map((user) => (
           <CustomersItem key={user.id} {...user} />
         ))}

@@ -66,4 +66,11 @@
     color: #DF0404;
 }
 
-.email{font-size: 10px;}
+.email{
+    font-size: 14px;
+}
+
+@media (max-width:520px) {
+    .email{  
+  font-size: 10px;
+    }}

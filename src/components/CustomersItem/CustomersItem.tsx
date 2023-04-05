@@ -10,7 +10,7 @@ const CustomersItem: FC<Props> = ({ name, company, phoneNumber, email, country, 
       <div className={s.item}>{name}</div>
       <div className={s.item}>{company}</div>
       <div className={s.item}>{phoneNumber}</div>
-      <div className={s.item}>{email}</div>
+      <div className={`${s.item} ${s.email}`}>{email}</div>
       <div className={s.item}>{country}</div>
       <div className={status === 'Inactive' ? `${s.inactive}` : `${s.active}`}> {status}</div>
     </li>
